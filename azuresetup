@@ -41,3 +41,7 @@ PS C:\Users\Mani> az group create --name aksresgrp --location southindia
 }
 
 ******************************************************************************************* 
+
+az aks create --resource-group aksresgrp --name kubecluster --node-count 3 --generate-ssh-keys
+
+Check the AKS env. is up or not, connect your kubernetes cluster credentials with the Azure Cli.
