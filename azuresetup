@@ -1,0 +1,43 @@
+Configure an AKS environment with 3 nodes
+ 1. install the Azure cli in your local environment with the below URL.
+
+     https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest
+ 2. Open the Powershell terminal with Admin rights.
+    az login
+ 3. Create a Resource group with below command.
+    az group create --name aksresgrp --location southindia
+
+*********************************************************************************************
+
+   C:\Users\Mani> az login
+You have logged in. Now let us find all the subscriptions to which you have access...
+[
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "8f0eaf37-504b-473c-83fb-0687e9a2982d",
+    "id": "9e0a07ad-452a-4f4e-baa7-03ff322e4a3c",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "Pay-As-You-Go",
+    "state": "Enabled",
+    "tenantId": "8f0eaf37-504b-473c-83fb-0687e9a2982d",
+    "user": {
+      "name": "manindra_mca@hotmail.com",
+      "type": "user"
+    }
+  }
+]
+PS C:\Users\Mani> az group create --name aksresgrp --location southindia
+{
+  "id": "/subscriptions/9e0a07ad-452a-4f4e-baa7-03ff322e4a3c/resourceGroups/aksresgrp",
+  "location": "southindia",
+  "managedBy": null,
+  "name": "aksresgrp",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": null,
+  "type": "Microsoft.Resources/resourceGroups"
+}
+
+******************************************************************************************* 
